@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <img src="https://i.postimg.cc/GpCxYmvc/title.png" alt="Logo" class="logo">
+  <div class="container">
+    <div class="content">
+      <h2>Conversor BRL</h2>
+      <p> Qual valor deseja Converter?</p>
+      <input type="number" id="valorInput" placeholder="Digite o valor em BRL">
+      <button onclick="Conversor_Dolar()">R$ BRL > US$ USD</button>
+      <button onclick="Conversor_Euro()">R$ BRL > € EUR</button>
+      <p>Valor Convertido:</p>
+      <input type="text" id="valorConvertido" readonly>
+      <div class="container-switch">
+         <p>Modo Noturno</p>
+         <label class="switch">
+          <input type="checkbox" id="toggleSwitch" onchange="Trocar_Fundo()">
+         <span class="slider"></span> 
+          <div id="coin-container"></div> <!-- Contêiner para as moedas -->
+        </label>
+      </div>
+    </div>
+  </div>
+  <footer>Alura - Imersão DEV - 2025</footer>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
